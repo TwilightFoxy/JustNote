@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct JustNoteApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
+    let persistentContainer: NSPersistentContainer = {
+            let container = NSPersistentContainer(name: "JustNote") // Имя модели данных
+            container.loadPersistentStores { storeDescription, error in
+                if let error = error as NSError? {
+                    fatalError("Нерешенная ошибка: \(error), \(error.userInfo)")
+                }
+            }
+            return container
+        }()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, persistentContainer.viewContext)
         }
     }
 }

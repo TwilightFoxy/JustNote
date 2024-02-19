@@ -6,83 +6,108 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
+    
+    @State private var showingAddNoteView = false
+    @State private var newNoteTitle = ""
+    
+    @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+        entity: NoteModel.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \NoteModel.dateCreated, ascending: true)]
+    ) var notes: FetchedResults<NoteModel>
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                ForEach(notes, id: \.self) { note in
+                    HStack {
+                        NavigationLink(destination: NoteDetailView(note: note)) {
+                            Text(note.title ?? "Без названия").font(.headline)
+                        }
+                        Spacer()
+                        Button(action: {
+                            deleteNoteSpecific(note: note)
+                        }) {
+                            Image(systemName: "trash")
+                                .foregroundColor(.red)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteNote)
             }
             .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: {
+                        self.showingAddNoteView = true
+                    }) {
+                        Image(systemName: "plus")
                     }
                 }
             }
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            .sheet(isPresented: $showingAddNoteView) {
+                VStack {
+                    TextField("Заголовок", text: $newNoteTitle)
+                    Button("Сохранить") {
+                        addNote()
+                        self.showingAddNoteView = false
+                    }
+                    .disabled(newNoteTitle.isEmpty)
+                }
+                .padding()
             }
         }
+//        .navigationTitle("Заметки")
     }
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+    private func addNote() {
+        let newNote = NoteModel(context: managedObjectContext)
+        newNote.id = UUID()
+        newNote.title = newNoteTitle
+        newNote.body = ""
+        newNote.dateCreated = Date()
+        newNote.dateModified = Date()
+        newNote.isFavorited = false
 
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+        do {
+            try managedObjectContext.save()
+            print("Добавлена заметка: \(newNote.title ?? "нет заголовка"), \(newNote.body ?? "нет тела")")
+            newNoteTitle = ""
+        } catch {
+            print("Не удалось сохранить заметку: \(error)")
+        }
+        saveContext()
+    }
+
+    private func deleteNote(at offsets: IndexSet) {
+        for index in offsets {
+                   let noteToDelete = notes[index]
+                   managedObjectContext.delete(noteToDelete)
+               }
+
+               do {
+                   try managedObjectContext.save()
+               } catch {
+                   print("Не удалось удалить заметку: \(error)")
+               }
+    }
+    private func deleteNoteSpecific(note: NoteModel) {
+        managedObjectContext.delete(note)
+        saveContext()
+    }
+
+    private func saveContext() {
+        do {
+            try managedObjectContext.save()
+        } catch {
+            print("Не удалось сохранить изменения: \(error)")
         }
     }
+
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    ContentView()
 }

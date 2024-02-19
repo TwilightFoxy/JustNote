@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		35DD30132B8386AD009467CD /* JustNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30122B8386AD009467CD /* JustNoteApp.swift */; };
-		35DD30152B8386AD009467CD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30142B8386AD009467CD /* Persistence.swift */; };
 		35DD30182B8386AD009467CD /* JustNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30162B8386AD009467CD /* JustNote.xcdatamodeld */; };
 		35DD301A2B8386AD009467CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30192B8386AD009467CD /* ContentView.swift */; };
 		35DD301C2B8386AE009467CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DD301B2B8386AE009467CD /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		35DD302A2B8386AE009467CD /* JustNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30292B8386AE009467CD /* JustNoteTests.swift */; };
 		35DD30342B8386AE009467CD /* JustNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30332B8386AE009467CD /* JustNoteUITests.swift */; };
 		35DD30362B8386AE009467CD /* JustNoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30352B8386AE009467CD /* JustNoteUITestsLaunchTests.swift */; };
+		35DD30442B838C61009467CD /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30432B838C61009467CD /* NoteDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		35DD300F2B8386AD009467CD /* JustNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DD30122B8386AD009467CD /* JustNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustNoteApp.swift; sourceTree = "<group>"; };
-		35DD30142B8386AD009467CD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		35DD30172B8386AD009467CD /* JustNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JustNote.xcdatamodel; sourceTree = "<group>"; };
 		35DD30192B8386AD009467CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35DD301B2B8386AE009467CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,8 @@
 		35DD302F2B8386AE009467CD /* JustNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DD30332B8386AE009467CD /* JustNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustNoteUITests.swift; sourceTree = "<group>"; };
 		35DD30352B8386AE009467CD /* JustNoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustNoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35DD30422B838920009467CD /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
+		35DD30432B838C61009467CD /* NoteDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteDetailView.swift; path = ../../../../Desktop/NoteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				35DD30122B8386AD009467CD /* JustNoteApp.swift */,
-				35DD30142B8386AD009467CD /* Persistence.swift */,
 				35DD30192B8386AD009467CD /* ContentView.swift */,
+				35DD30432B838C61009467CD /* NoteDetailView.swift */,
 				35DD301B2B8386AE009467CD /* Assets.xcassets */,
 				35DD301D2B8386AE009467CD /* JustNote.entitlements */,
 				35DD30162B8386AD009467CD /* JustNote.xcdatamodeld */,
@@ -268,7 +269,7 @@
 				35DD30182B8386AD009467CD /* JustNote.xcdatamodeld in Sources */,
 				35DD30132B8386AD009467CD /* JustNoteApp.swift in Sources */,
 				35DD301A2B8386AD009467CD /* ContentView.swift in Sources */,
-				35DD30152B8386AD009467CD /* Persistence.swift in Sources */,
+				35DD30442B838C61009467CD /* NoteDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,9 +631,10 @@
 		35DD30162B8386AD009467CD /* JustNote.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				35DD30422B838920009467CD /* NoteModel.xcdatamodel */,
 				35DD30172B8386AD009467CD /* JustNote.xcdatamodel */,
 			);
-			currentVersion = 35DD30172B8386AD009467CD /* JustNote.xcdatamodel */;
+			currentVersion = 35DD30422B838920009467CD /* NoteModel.xcdatamodel */;
 			path = JustNote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
