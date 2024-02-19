@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35DD30132B8386AD009467CD /* JustNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30122B8386AD009467CD /* JustNoteApp.swift */; };
+		35DD30152B8386AD009467CD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30142B8386AD009467CD /* Persistence.swift */; };
+		35DD30182B8386AD009467CD /* JustNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30162B8386AD009467CD /* JustNote.xcdatamodeld */; };
+		35DD301A2B8386AD009467CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30192B8386AD009467CD /* ContentView.swift */; };
+		35DD301C2B8386AE009467CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DD301B2B8386AE009467CD /* Assets.xcassets */; };
+		35DD30202B8386AE009467CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DD301F2B8386AE009467CD /* Preview Assets.xcassets */; };
+		35DD302A2B8386AE009467CD /* JustNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30292B8386AE009467CD /* JustNoteTests.swift */; };
+		35DD30342B8386AE009467CD /* JustNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30332B8386AE009467CD /* JustNoteUITests.swift */; };
+		35DD30362B8386AE009467CD /* JustNoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD30352B8386AE009467CD /* JustNoteUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35DD30262B8386AE009467CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD30072B8386AD009467CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35DD300E2B8386AD009467CD;
+			remoteInfo = JustNote;
+		};
+		35DD30302B8386AE009467CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35DD30072B8386AD009467CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35DD300E2B8386AD009467CD;
+			remoteInfo = JustNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35DD300F2B8386AD009467CD /* JustNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DD30122B8386AD009467CD /* JustNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustNoteApp.swift; sourceTree = "<group>"; };
+		35DD30142B8386AD009467CD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		35DD30172B8386AD009467CD /* JustNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JustNote.xcdatamodel; sourceTree = "<group>"; };
+		35DD30192B8386AD009467CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35DD301B2B8386AE009467CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35DD301D2B8386AE009467CD /* JustNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustNote.entitlements; sourceTree = "<group>"; };
+		35DD301F2B8386AE009467CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35DD30252B8386AE009467CD /* JustNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DD30292B8386AE009467CD /* JustNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustNoteTests.swift; sourceTree = "<group>"; };
+		35DD302F2B8386AE009467CD /* JustNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DD30332B8386AE009467CD /* JustNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustNoteUITests.swift; sourceTree = "<group>"; };
+		35DD30352B8386AE009467CD /* JustNoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustNoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35DD300C2B8386AD009467CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DD30222B8386AE009467CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DD302C2B8386AE009467CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35DD30062B8386AD009467CD = {
+			isa = PBXGroup;
+			children = (
+				35DD30112B8386AD009467CD /* JustNote */,
+				35DD30282B8386AE009467CD /* JustNoteTests */,
+				35DD30322B8386AE009467CD /* JustNoteUITests */,
+				35DD30102B8386AD009467CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35DD30102B8386AD009467CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DD300F2B8386AD009467CD /* JustNote.app */,
+				35DD30252B8386AE009467CD /* JustNoteTests.xctest */,
+				35DD302F2B8386AE009467CD /* JustNoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DD30112B8386AD009467CD /* JustNote */ = {
+			isa = PBXGroup;
+			children = (
+				35DD30122B8386AD009467CD /* JustNoteApp.swift */,
+				35DD30142B8386AD009467CD /* Persistence.swift */,
+				35DD30192B8386AD009467CD /* ContentView.swift */,
+				35DD301B2B8386AE009467CD /* Assets.xcassets */,
+				35DD301D2B8386AE009467CD /* JustNote.entitlements */,
+				35DD30162B8386AD009467CD /* JustNote.xcdatamodeld */,
+				35DD301E2B8386AE009467CD /* Preview Content */,
+			);
+			path = JustNote;
+			sourceTree = "<group>";
+		};
+		35DD301E2B8386AE009467CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				35DD301F2B8386AE009467CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35DD30282B8386AE009467CD /* JustNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				35DD30292B8386AE009467CD /* JustNoteTests.swift */,
+			);
+			path = JustNoteTests;
+			sourceTree = "<group>";
+		};
+		35DD30322B8386AE009467CD /* JustNoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35DD30332B8386AE009467CD /* JustNoteUITests.swift */,
+				35DD30352B8386AE009467CD /* JustNoteUITestsLaunchTests.swift */,
+			);
+			path = JustNoteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35DD300E2B8386AD009467CD /* JustNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DD30392B8386AE009467CD /* Build configuration list for PBXNativeTarget "JustNote" */;
+			buildPhases = (
+				35DD300B2B8386AD009467CD /* Sources */,
+				35DD300C2B8386AD009467CD /* Frameworks */,
+				35DD300D2B8386AD009467CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustNote;
+			productName = JustNote;
+			productReference = 35DD300F2B8386AD009467CD /* JustNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35DD30242B8386AE009467CD /* JustNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DD303C2B8386AE009467CD /* Build configuration list for PBXNativeTarget "JustNoteTests" */;
+			buildPhases = (
+				35DD30212B8386AE009467CD /* Sources */,
+				35DD30222B8386AE009467CD /* Frameworks */,
+				35DD30232B8386AE009467CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35DD30272B8386AE009467CD /* PBXTargetDependency */,
+			);
+			name = JustNoteTests;
+			productName = JustNoteTests;
+			productReference = 35DD30252B8386AE009467CD /* JustNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35DD302E2B8386AE009467CD /* JustNoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DD303F2B8386AE009467CD /* Build configuration list for PBXNativeTarget "JustNoteUITests" */;
+			buildPhases = (
+				35DD302B2B8386AE009467CD /* Sources */,
+				35DD302C2B8386AE009467CD /* Frameworks */,
+				35DD302D2B8386AE009467CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35DD30312B8386AE009467CD /* PBXTargetDependency */,
+			);
+			name = JustNoteUITests;
+			productName = JustNoteUITests;
+			productReference = 35DD302F2B8386AE009467CD /* JustNoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35DD30072B8386AD009467CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					35DD300E2B8386AD009467CD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					35DD30242B8386AE009467CD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 35DD300E2B8386AD009467CD;
+					};
+					35DD302E2B8386AE009467CD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 35DD300E2B8386AD009467CD;
+					};
+				};
+			};
+			buildConfigurationList = 35DD300A2B8386AD009467CD /* Build configuration list for PBXProject "JustNote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35DD30062B8386AD009467CD;
+			productRefGroup = 35DD30102B8386AD009467CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35DD300E2B8386AD009467CD /* JustNote */,
+				35DD30242B8386AE009467CD /* JustNoteTests */,
+				35DD302E2B8386AE009467CD /* JustNoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35DD300D2B8386AD009467CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DD30202B8386AE009467CD /* Preview Assets.xcassets in Resources */,
+				35DD301C2B8386AE009467CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DD30232B8386AE009467CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DD302D2B8386AE009467CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35DD300B2B8386AD009467CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DD30182B8386AD009467CD /* JustNote.xcdatamodeld in Sources */,
+				35DD30132B8386AD009467CD /* JustNoteApp.swift in Sources */,
+				35DD301A2B8386AD009467CD /* ContentView.swift in Sources */,
+				35DD30152B8386AD009467CD /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DD30212B8386AE009467CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DD302A2B8386AE009467CD /* JustNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DD302B2B8386AE009467CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DD30362B8386AE009467CD /* JustNoteUITestsLaunchTests.swift in Sources */,
+				35DD30342B8386AE009467CD /* JustNoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35DD30272B8386AE009467CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35DD300E2B8386AD009467CD /* JustNote */;
+			targetProxy = 35DD30262B8386AE009467CD /* PBXContainerItemProxy */;
+		};
+		35DD30312B8386AE009467CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35DD300E2B8386AD009467CD /* JustNote */;
+			targetProxy = 35DD30302B8386AE009467CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35DD30372B8386AE009467CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35DD30382B8386AE009467CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		35DD303A2B8386AE009467CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustNote/JustNote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JustNote/Preview Content\"";
+				DEVELOPMENT_TEAM = 5U688Z893C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = twilight.JustNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35DD303B2B8386AE009467CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustNote/JustNote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JustNote/Preview Content\"";
+				DEVELOPMENT_TEAM = 5U688Z893C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = twilight.JustNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35DD303D2B8386AE009467CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U688Z893C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = twilight.JustNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustNote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JustNote";
+			};
+			name = Debug;
+		};
+		35DD303E2B8386AE009467CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U688Z893C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = twilight.JustNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustNote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JustNote";
+			};
+			name = Release;
+		};
+		35DD30402B8386AE009467CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U688Z893C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = twilight.JustNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JustNote;
+			};
+			name = Debug;
+		};
+		35DD30412B8386AE009467CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U688Z893C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = twilight.JustNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JustNote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35DD300A2B8386AD009467CD /* Build configuration list for PBXProject "JustNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DD30372B8386AE009467CD /* Debug */,
+				35DD30382B8386AE009467CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DD30392B8386AE009467CD /* Build configuration list for PBXNativeTarget "JustNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DD303A2B8386AE009467CD /* Debug */,
+				35DD303B2B8386AE009467CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DD303C2B8386AE009467CD /* Build configuration list for PBXNativeTarget "JustNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DD303D2B8386AE009467CD /* Debug */,
+				35DD303E2B8386AE009467CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DD303F2B8386AE009467CD /* Build configuration list for PBXNativeTarget "JustNoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DD30402B8386AE009467CD /* Debug */,
+				35DD30412B8386AE009467CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		35DD30162B8386AD009467CD /* JustNote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				35DD30172B8386AD009467CD /* JustNote.xcdatamodel */,
+			);
+			currentVersion = 35DD30172B8386AD009467CD /* JustNote.xcdatamodel */;
+			path = JustNote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 35DD30072B8386AD009467CD /* Project object */;
+}
